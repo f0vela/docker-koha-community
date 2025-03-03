@@ -16,7 +16,7 @@ services:
       DB_ROOT_PASSWORD: secret
       DOMAIN: .example.com
       KOHA_TRANSLATE_LANGUAGES: "ca-ES"
-      INTRAPORT: 80
+      INTRAPORT: 9000
       INTRAPREFIX: library
       INTRASUFFIX: .admin
       OPACPREFIX: library
