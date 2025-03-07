@@ -36,4 +36,4 @@ services:
     container_name: memcached
     image: memcached
     ports:
-      - "11211:11211"
+      - "11311:11211"
