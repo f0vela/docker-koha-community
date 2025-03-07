@@ -14,6 +14,10 @@ services:
     environment:
       DB_HOST: koha-db
       DB_ROOT_PASSWORD: secret
+      KOHA_DB_HOST: koha-db
+      KOHA_DB_USER: koha_user
+      KOHA_DB_PASS: koha_password
+      KOHA_DB_NAME: koha_defaultlibraryname
       DOMAIN: .asies.org.gt
       KOHA_TRANSLATE_LANGUAGES: "ca-ES"
       INTRAPORT: 8001
@@ -28,6 +32,9 @@ services:
     container_name: koha-db
     environment:
       MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: koha_defaultlibraryname
+      MYSQL_USER: koha_user
+      MYSQL_PASSWORD: koha_password
     # Newer versions not working
     image: mariadb:10.3
 
