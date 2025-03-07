@@ -16,12 +16,12 @@ services:
       DB_ROOT_PASSWORD: secret
       DOMAIN: .asies.org.gt
       KOHA_TRANSLATE_LANGUAGES: "ca-ES"
-      INTRAPORT: 8000
+      INTRAPORT: 8001
       INTRAPREFIX: library
       INTRASUFFIX: .admin
       OPACPREFIX: library
     ports:
-      - "8000:8000"
+      - "8001:80"
       - "8081:8081"
 
   koha-db:
